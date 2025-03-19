@@ -2,6 +2,8 @@
 
 *When you want to find out a places review*
 
+## Note: This will only give you the reviews with comments, cuz that's all I need
+
 ## Usage
 ```
 python3 -m venv venv
@@ -9,8 +11,9 @@ python3 -m venv venv
 ```
 source venv/bin/activate
 ```
+### Open the Google Maps Page of the place desired, go to the FULL review section, scroll through to make sure all is loaded
 ### Open inspect on google maps web,
-### Copy the title of the most inner layer that contains all the reviews (That should copy all enclosed)
+### Find and Copy the title of the most inner layer that contains all the reviews (That should copy all enclosed)
 ### Put it in input.txt
 ```
 python main.py
