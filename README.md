@@ -15,7 +15,7 @@ curl -L -A "Mozilla/5.0" https://example.com -o example.html
 
 httrack - Most comprehensive website mirror:
 ```
-httrack "https://example.com/" -O "./downloaded-site" -%u
+httrack https://example.com -O ./downloaded-site -v -%v
 ```
 
 aria2 - High-speed download with multiple connections:
