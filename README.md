@@ -3,10 +3,30 @@
 This web scraper is designed to extract data from a specific websites.
 
 ## List of useful commands:
+wget - Complete website mirror with all resources:
 ```
-wget -r -p -U Mozilla https://linux.org
+wget -r -np -k -p -U "Mozilla/5.0" https://example.com
 ```
 
+curl - Download a single page with all linked content (requires additional processing):
+```
+curl -L -A "Mozilla/5.0" https://example.com -o example.html
+```
+
+httrack - Most comprehensive website mirror:
+```
+httrack https://example.com -O ./downloaded-site -v -%v
+```
+
+aria2 - High-speed download with multiple connections:
+```
+aria2c -x 16 -s 16 -k 1M https://example.com/file
+```
+
+yt-dlp - Best quality video download with all associated content:
+```
+yt-dlp --write-thumbnail --write-description --write-info-json --all-subs --embed-subs https://www.youtube.com/watch?v=example
+```
 
 
 ### Limitations
